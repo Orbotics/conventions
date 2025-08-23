@@ -8,6 +8,10 @@ This markdown file is meant to outline the conventions for workflow and processe
   - [Task Creation & Assignment](#task-creation--assignment)
   - [Story Points & Estimation](#story-points--estimation)
   - [Ticket Status Workflow](#ticket-status-workflow)
+- [Git Version Control](#git-version-control)
+  - [Branching Strategy](#branching-strategy)
+  - [Commit Message Guidelines](#commit-message-guidelines)
+  - [PR Review and Approval Process](#pr-review-and-approval-process)
 
 ## Project Management
 
@@ -25,7 +29,7 @@ To facilitate sprints, we will be using [`Taiga`](https://taiga.io/), a free ope
 
 <br>
 
-To add a new ticket, navigate to [Team Tree](https://tree.taiga.io/project/ryanzhangofficial-orbotics-frc-team-10152/)(by invite) and click on "Add New User Story". In industry, teams call new tasks "User Stories" because new features are added in the perspective of the end-user. However, as FRC Robotics students we will refer to tasks as "tickets".
+To add a new ticket, navigate to [Team Tree](https://tree.taiga.io/project/ryanzhangofficial-orbotics-frc-team-10152/) (by invite) and click on "Add New User Story". In industry, teams call new tasks "User Stories" because new features are added in the perspective of the end-user. However, as FRC Robotics students we will refer to tasks as "tickets".
 
 <br>
 
@@ -53,3 +57,32 @@ Taiga allows users to configure the status of tickets. If you're working on a ti
 <br>
 
 <img width="3839" height="2054" alt="Screenshot 2025-08-22 175712" src="https://github.com/user-attachments/assets/f2eaf96a-95ac-4f39-96b9-e52c1b578bcf" />
+
+<br>
+
+## Git Version Control
+
+### Branching Strategy
+There will be two core branches: the `main` branch which consists of the final robot code for deployment during competitions, and the `dev` branch which will include all approved code. You may wonder, why do we distinguish between these two branches? This is mainly due to how [sprints](#sprints--season-adjustments) work. Approved code during a sprint will be merged into the `dev` branch, and all new code will be merged into the `main` branch at the end of the sprint. 
+
+<br>
+
+<img width="3837" height="2048" alt="Screenshot 2025-08-23 121131" src="https://github.com/user-attachments/assets/a94b267d-4299-4976-a478-b3326851b1ae" />
+
+<br>
+
+However, as a developer, most of your interactions with the robot code repository will not be with those two branches, unless you're responsible for git actions, and will be working on separate branches. Each ticket has a corresponding number and name. When creating a new branch for your ticket, please refer to the convention of `{your name}/{ticket-number}/{ticket-name}`.
+
+<br>
+
+<img width="2405" height="146" alt="Screenshot 2025-08-23 121812" src="https://github.com/user-attachments/assets/3b8db49f-09ff-417d-856a-cfa3a0e4a869" />
+
+<br>
+
+<img width="3839" height="2051" alt="Screenshot 2025-08-23 122043" src="https://github.com/user-attachments/assets/c920fc50-1834-4b56-884d-d4daa0f02850" />
+
+<br>
+
+### Commit Message Guidelines
+
+### PR Review and Approval Process
