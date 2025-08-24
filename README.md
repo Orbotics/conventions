@@ -61,6 +61,7 @@ Taiga allows users to configure the status of tickets. If you're working on a ti
 <br>
 
 ## Git Version Control
+This markdown file is meant for outlining conventions. If you want to learn git, feel free to explore this [document](https://github.com/ryanzhangofficial/git-guide) or the official [Github documentation](https://docs.github.com/en).
 
 ### Branching Strategy
 There will be two core branches: the `main` branch which consists of the final robot code for deployment during competitions, and the `dev` branch which will include all approved code. You may wonder, why do we distinguish between these two branches? This is mainly due to how [sprints](#sprints--season-adjustments) work. Approved code during a sprint will be merged into the `dev` branch, and all new code will be merged into the `main` branch at the end of the sprint. 
@@ -84,5 +85,24 @@ However, as a developer, most of your interactions with the robot code repositor
 <br>
 
 ### Commit Message Guidelines
+Having an orderly set of commit guidelines is crucial to any git workflow. This ensures organization and makes it easier to go through logs as the codebase becomes larger. For Team 10152, the core commit types are:  
+
+- **Feats** — use `Add`, `Update`, or `Remove` at the start of the message  
+- **Chore** — routine maintenance tasks such as formatting or cleanup  
+- **Fix** — resolving a bug in the current code  
+
+The table below shows the expected formats for git commit messages:
+
+<br>
+
+| Type   | Format                 | Example Commit Message             |
+|--------|------------------------|------------------------------------|
+| Feat   | `Add <description>`    | `Add drivetrain subsystem`         |
+| Feat   | `Update <description>` | `Update autonomous routine`        |
+| Feat   | `Remove <description>` | `Remove unused sensor logic`       |
+| Chore  | `chore: <description>`  | `chore: formatting`               |
+| Fix    | `fix: <description>`    | `fix: motor controller ID`        |
+
+<br>
 
 ### PR Review and Approval Process
