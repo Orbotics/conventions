@@ -106,3 +106,49 @@ The table below shows the expected formats for git commit messages:
 <br>
 
 ### PR Review and Approval Process
+In a professional software environment, PR Review and Approval is just as important as coding. This is the process where other software engineers in your team review your submitted pull request and give feedback. Throughout the sprint, as a project manager, the Software Captain will bear most of the responsibility of review, and team members with time should partake as well. After a PR has enough approving reviews (2 for Team FRC 10152), it will be merged into the `dev` branch. Naturally, there are often more PRs waiting for review at the end of sprints, and it may be decided to allocate the final day just for getting these tickets in. We outline some rules to follow:
+
+<br>
+
+There are three core components when opening a PR:  
+1. **Title**: Please enter in the follow format: {Ticket Name} `[Ticket-{Number}]`  
+2. **Description**: There are three sections that should be in every PR. The Description includes a brief summary of what the PR is for and a link to the Taiga ticket. The Solution includes how you solved the problem detailed in the Description. The Verficiation details what testing you did to make sure your code works the way it should (e.g. deploying it to the RoboRio and doing test runs).  
+3. **Right Column**: This column allows you to add metadata for the PR. Assign yourself as a reviewer and add an appropriate label.  
+
+<br>
+
+Here is an example of a PR to open:
+
+<br>
+
+<img width="1919" height="904" alt="Screenshot 2025-08-25 164126" src="https://github.com/user-attachments/assets/d97f210d-65e4-42f8-81b1-d1be69735389" />
+
+<br>
+
+<img width="1919" height="904" alt="Screenshot 2025-08-25 165357" src="https://github.com/user-attachments/assets/36ae4558-0615-4acd-874c-cd170b958532" />
+
+<br>
+
+To review PRs, navigate to the Pull Requests tab. For FRC Team 10152, our general guidelines for the individual reviewing process is the following:  
+
+- Check that code compiles and runs without errors  
+- Ensure changes match the ticket description  
+- Verify code follows team style conventions  
+- Confirm no unnecessary files or debug code are included  
+- Add comments if something is unclear or could be improved  
+- Approve only when the code is tested and meets requirements  
+
+<br>
+
+When submitting a PR Review, the three types to keep in mind are:  
+1. **Approve**: accept changes proposed in PR to be merged  
+2. **Request Changes**: submits feedback that should be addressed before PR can be merged  
+3. **Comment**: general feedback that isn't approval or change request  
+
+<br>
+
+<img width="1919" height="907" alt="Screenshot 2025-08-25 165505" src="https://github.com/user-attachments/assets/6e8fbf37-763c-4d4c-abde-1c91da896970" />
+
+<br>
+
+PR Review is a core part of the software workflow. It increases organization and productivity, while ensuring our robot code is clean. It is recommended that all software team members should go through the experience of PR review throughout the season.
