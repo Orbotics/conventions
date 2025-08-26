@@ -1,22 +1,21 @@
 # Conventions
-
-This markdown file is meant to outline the conventions for workflow and processes for robot code. These rules are specific to Orbotics FRC Team 10152, but feel free to use or modify them for your own team as well!
+This markdown file is meant to outline the conventions for workflow and processes for robot code. Conventions are important because they provide structure and consistency for the team. These rules are specific to Orbotics FRC Team 10152, but feel free to use or modify them for your own team as well!
 
 ## Table of Contents
+- [Git Version Control](#git-version-control)
+  - [Branching Strategy](#branching-strategy)
+  - [Commit Message Guidelines](#commit-message-guidelines)
+  - [PR Review and Approval Process](#pr-review-and-approval-process)
 - [Project Management](#project-management)
   - [Sprints & Season Adjustments](#sprints--season-adjustments)
   - [Task Creation & Assignment](#task-creation--assignment)
   - [Story Points & Estimation](#story-points--estimation)
   - [Ticket Status Workflow](#ticket-status-workflow)
-- [Git Version Control](#git-version-control)
-  - [Branching Strategy](#branching-strategy)
-  - [Commit Message Guidelines](#commit-message-guidelines)
-  - [PR Review and Approval Process](#pr-review-and-approval-process)
-
+    
 ## Project Management
 
 ### Sprints & Season Adjustments
-We aim to make the robot software development process similar to a traditional software engineering process. During the FRC build season (6-7 weeks) and throughout the offseason, we will be coding in "sprints". Used in professional environments, code sprints are short time-boxed periods (typically one to four weeks), where there are a defined list of tasks to be completed. For Team 10152, we will be adjusting the length of sprints based on the stage of season. For example, weekly sprints may be set during the build season due to time constraints, and monthly sprints during the offseason. 
+We aim to make the robot software development process similar to a traditional software engineering process. During the FRC build season (6-7 weeks) and throughout the offseason, we will be coding in "sprints." Used in professional environments, code sprints are short time-boxed periods (typically one to four weeks), where there is a defined list of tasks to be completed. For Team 10152, we will be adjusting the length of sprints based on the stage of the season. For example, weekly sprints may be set during the build season due to time constraints, and monthly sprints during the offseason. 
 
 <br>
 
@@ -29,7 +28,7 @@ To facilitate sprints, we will be using [`Taiga`](https://taiga.io/), a free ope
 
 <br>
 
-To add a new ticket, navigate to [Team Tree](https://tree.taiga.io/project/ryanzhangofficial-orbotics-frc-team-10152/) (by invite) and click on "Add New User Story". In industry, teams call new tasks "User Stories" because new features are added in the perspective of the end-user. However, as FRC Robotics students we will refer to tasks as "tickets".
+To add a new ticket, navigate to [Team Tree](https://tree.taiga.io/project/ryanzhangofficial-orbotics-frc-team-10152/) (by invite) and click on "Add New User Story." In industry, teams call new tasks "User Stories" because new features are added in the perspective of the end user. However, as FRC Robotics students we will refer to tasks as "tickets."
 
 <br>
 
@@ -38,7 +37,7 @@ To add a new ticket, navigate to [Team Tree](https://tree.taiga.io/project/ryanz
 <br>
 
 ### Story Points & Estimation
-When you create a ticket, make sure to include a concise title, detailed description, and attachments if needed. Story points are a core part of the software project management. Because we are working on robot 
+When you create a ticket, make sure to include a concise title, detailed description, and attachments if needed. Story points are a core part of software project management. Because we are working on robot 
 code, ignore the UX, Design, and Frontend rows, and only add to the Backend row. In the workplace, 1 Story Point is equivalent to a day or half a day's work. Team 10152 will regard one story point as a day's work.  
 
 <br>
@@ -47,12 +46,12 @@ code, ignore the UX, Design, and Frontend rows, and only add to the Backend row.
 
 <br>
 
-As a software captain, please use your best judgement when assigning story points to tickets. However, it won't always be perfect, and that's ok. There will be huge overestimations and underestimations, but you will develop an intuition throughout the year. Most importantly, encourage communication with your team to make sure everyone can manage their workload. FRC is supposed to be a great learning experience, but lots of fun at the same time!
+As a Software Captain, please use your best judgement when assigning story points to tickets. However, it won't always be perfect, and that's ok. There will be huge overestimations and underestimations, but you will develop an intuition throughout the year. Most importantly, encourage communication with your team to make sure everyone can manage their workload. FRC is supposed to be a great learning experience, but lots of fun at the same time!
 
 <br>
 
 ### Ticket Status Workflow
-Taiga allows users to configure the status of tickets. If you're working on a ticket, please set status to `In Progress`. If you're ticket is ready for review, please switch to `Ready for Test`. Once the ticket's corresponding PR has been reviewed and approved, the Software Captain will merge the PR and set status to `Done`.
+Taiga allows users to configure the status of tickets. If you're working on a ticket, please set the status to `In Progress`. If your ticket is ready for review, please switch to `Ready for Test`. Once the ticket's corresponding PR has been reviewed and approved, the Software Captain will merge the PR and set the status to `Done`.
 
 <br>
 
@@ -61,7 +60,7 @@ Taiga allows users to configure the status of tickets. If you're working on a ti
 <br>
 
 ## Git Version Control
-This markdown file is meant for outlining conventions. If you want to learn git, feel free to explore this [document](https://github.com/ryanzhangofficial/git-guide) or the official [Github documentation](https://docs.github.com/en).
+This markdown file is meant for outlining conventions. If you want to learn git, feel free to explore this [document](https://github.com/ryanzhangofficial/git-guide) or the official [GitHub documentation](https://docs.github.com/en).
 
 ### Branching Strategy
 There will be two core branches: the `main` branch which consists of the final robot code for deployment during competitions, and the `dev` branch which will include all approved code. You may wonder, why do we distinguish between these two branches? This is mainly due to how [sprints](#sprints--season-adjustments) work. Approved code during a sprint will be merged into the `dev` branch, and all new code will be merged into the `main` branch at the end of the sprint. 
@@ -100,8 +99,8 @@ The table below shows the expected formats for git commit messages:
 | Feat   | `Add <description>`    | `Add drivetrain subsystem`         |
 | Feat   | `Update <description>` | `Update autonomous routine`        |
 | Feat   | `Remove <description>` | `Remove unused sensor logic`       |
-| Chore  | `chore: <description>`  | `chore: formatting`               |
-| Fix    | `fix: <description>`    | `fix: motor controller ID`        |
+| Chore  | `chore: <description>` | `chore: formatting`                |
+| Fix    | `fix: <description>`   | `fix: motor controller ID`         |
 
 <br>
 
@@ -111,8 +110,8 @@ In a professional software environment, PR Review and Approval is just as import
 <br>
 
 There are three core components when opening a PR:  
-1. **Title**: Please enter in the follow format: {Ticket Name} `[Ticket-{Number}]`  
-2. **Description**: There are three sections that should be in every PR. The Description includes a brief summary of what the PR is for and a link to the Taiga ticket. The Solution includes how you solved the problem detailed in the Description. The Verficiation details what testing you did to make sure your code works the way it should (e.g. deploying it to the RoboRio and doing test runs).  
+1. **Title**: Please enter in the following format: {Ticket Name} `[Ticket-{Number}]`  
+2. **Description**: There are three sections that should be in every PR. The Description includes a brief summary of what the PR is for and a link to the Taiga ticket. The Solution includes how you solved the problem detailed in the Description. The Verification details what testing you did to make sure your code works the way it should (e.g. deploying it to the RoboRio and doing test runs).  
 3. **Right Column**: This column allows you to add metadata for the PR. Assign yourself as a reviewer and add an appropriate label.  
 
 <br>
@@ -129,7 +128,7 @@ Here is an example of a PR to open:
 
 <br>
 
-To review PRs, navigate to the Pull Requests tab. For FRC Team 10152, our general guidelines for the individual reviewing process is the following:  
+To review PRs, navigate to the Pull Requests tab. For FRC Team 10152, our general guidelines for the individual reviewing process are the following:  
 
 - Check that code compiles and runs without errors  
 - Ensure changes match the ticket description  
@@ -141,9 +140,9 @@ To review PRs, navigate to the Pull Requests tab. For FRC Team 10152, our genera
 <br>
 
 When submitting a PR Review, the three types to keep in mind are:  
-1. **Approve**: accept changes proposed in PR to be merged  
-2. **Request Changes**: submits feedback that should be addressed before PR can be merged  
-3. **Comment**: general feedback that isn't approval or change request  
+1. **Approve**: accept changes proposed in the PR to be merged  
+2. **Request Changes**: submit feedback that should be addressed before the PR can be merged  
+3. **Comment**: general feedback that isn't approval or a change request  
 
 <br>
 
@@ -151,4 +150,4 @@ When submitting a PR Review, the three types to keep in mind are:
 
 <br>
 
-PR Review is a core part of the software workflow. It increases organization and productivity, while ensuring our robot code is clean. It is recommended that all software team members should go through the experience of PR review throughout the season.
+PR Review is a core part of the software workflow. It increases organization and productivity while ensuring our robot code is clean. It is recommended that all software team members go through the experience of PR review throughout the season.
